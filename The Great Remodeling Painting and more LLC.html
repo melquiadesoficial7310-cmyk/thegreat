@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Great Remodeling Painting and more LLC | West Palm Beach & South Florida</title>
+  <meta name="description" content="Remodelación de lujo, pintura interior y exterior en West Palm Beach, Sur de la Florida y Los Cayos. Contáctanos al +1 (254) 569-4370." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Cinzel (Luxury Serif) & Inter (Clean Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              950: '#0F0F11',
+              900: '#161619',
+              850: '#1C1C20',
+              800: '#242429',
+              700: '#323239',
+            },
+            gold: {
+              300: '#F3DC8B',
+              400: '#E5C158',
+              500: '#D4AF37',
+              600: '#B59024',
+              700: '#8C6D16',
+            }
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 25px rgba(212, 175, 55, 0.25)',
+            'gold-strong': '0 10px 35px -5px rgba(212, 175, 55, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #161619;
+      color: #F4F4F6;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Metallic Gold Text Gradient */
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #F3DC8B 0%, #D4AF37 50%, #AA8222 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Metallic Gold Button Gradient */
+    .btn-gold {
+      background: linear-gradient(135deg, #E5C158 0%, #D4AF37 55%, #B59024 100%);
+      color: #111113;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-gold:hover {
+      background: linear-gradient(135deg, #F3DC8B 0%, #E5C158 55%, #C9A22E 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #161619;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A3A42;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+
+    /* Subtle Hero Architectural Pattern */
+    .hero-bg {
+      background-image:
+        radial-gradient(circle at 75% 25%, rgba(212, 175, 55, 0.14) 0%, transparent 50%),
+        radial-gradient(circle at 15% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 45%),
+        linear-gradient(to bottom, rgba(15, 15, 17, 0.85), rgba(22, 22, 25, 0.96)),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Before/After Slider Styling */
+    .ba-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .ba-before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50%;
+      overflow: hidden;
+    }
+    .ba-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      background: #D4AF37;
+      cursor: ew-resize;
+      z-index: 20;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 9999px;
+      background: #161619;
+      border: 2px solid #D4AF37;
+      color: #D4AF37;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Tab Fade Animation */
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-slide {
+      animation: fadeSlide 0.35s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-obsidian-950">
+
+  <!-- =========================================================
+       TOP ANNOUNCEMENT BAR (WEST PALM BEACH & FLORIDA KEYS)
+  ========================================================== -->
+  <div class="bg-obsidian-950 border-b border-gold-500/20 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-gray-300">
+        <i class="fa-solid fa-location-dot text-gold-500"></i>
+        <span data-i18n="topLocation">West Palm Beach, FL • Cobertura en todo el Sur de la Florida y Los Cayos</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+12545694370" class="text-gold-400 hover:text-gold-300 font-semibold flex items-center gap-1.5 transition">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+1 (254) 569-4370</span>
+        </a>
+        <!-- Language Switcher for Maximum South Florida Reach -->
+        <button id="langToggle" onclick="toggleLanguage()" class="px-2.5 py-0.5 rounded-full border border-gold-500/50 text-gold-400 hover:bg-gold-500 hover:text-obsidian-950 font-semibold text-xs transition cursor-pointer">
+          <i class="fa-solid fa-globe mr-1"></i><span id="langLabel">EN</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       STICKY NAVBAR WITH FAITHFUL GOLD LION CREST LOGO
+  ========================================================== -->
+  <header class="sticky top-0 z-40 bg-obsidian-900/95 backdrop-blur-md border-b border-gold-500/20 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <!-- Brand Logo + Name -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <!-- Faithful Vector Recreation of the Company Crest Logo (Lion + Shield + T, G, Y, B + Arched Text) -->
+        <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-obsidian-950 border border-gold-500/40 p-1 flex items-center justify-center shadow-gold-glow group-hover:border-gold-400 transition">
+          <svg viewBox="0 0 240 230" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" aria-label="The Great Remodeling Painting and more LLC Logo">
+            <defs>
+              <linearGradient id="goldCrestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F6E299"/>
+                <stop offset="45%" stop-color="#D4AF37"/>
+                <stop offset="100%" stop-color="#9C761B"/>
+              </linearGradient>
+              <path id="curveTop" d="M 28,155 A 115,95 0 0,0 212,155" />
+              <path id="curveBottom" d="M 16,172 A 130,108 0 0,0 224,172" />
+            </defs>
+
+            <!-- Outer Ribbon Banner Ends -->
+            <path d="M 24,132 L 58,132 L 52,152 L 18,156 L 30,144 Z" fill="none" stroke="url(#goldCrestGrad)" stroke-width="3.5" stroke-linejoin="round"/>
+            <path d="M 216,132 L 182,132 L 188,152 L 222,156 L 210,144 Z" fill="none" stroke="url(#goldCrestGrad)" stroke-width="3.5" stroke-linejoin="round"/>
+
+            <!-- Royal Shield Outline -->
+            <path d="M 55,62 L 185,62 L 185,112 C 185,146 150,166 120,178 C 90,166 55,146 55,112 Z"
+                  fill="#0D0D0F" stroke="url(#goldCrestGrad)" stroke-width="4.5" stroke-linejoin="round"/>
+            <path d="M 63,70 L 177,70 L 177,110 C 177,139 146,157 120,168 C 94,157 63,139 63,110 Z"
+                  fill="none" stroke="url(#goldCrestGrad)" stroke-width="2" opacity="0.85"/>
+
+            <!-- Monogram Letters T, G, Y, B matching attached logo -->
+            <circle cx="78" cy="86" r="10" fill="none" stroke="url(#goldCrestGrad)" stroke-width="1.8"/>
+            <text x="78" y="90" text-anchor="middle" fill="url(#goldCrestGrad)" font-family="Cinzel, serif" font-weight="800" font-size="12">T</text>
+
+            <circle cx="162" cy="86" r="10" fill="none" stroke="url(#goldCrestGrad)" stroke-width="1.8"/>
+            <text x="162" y="90" text-anchor="middle" fill="url(#goldCrestGrad)" font-family="Cinzel, serif" font-weight="800" font-size="12">G</text>
+
+            <text x="92" y="122" text-anchor="middle" fill="url(#goldCrestGrad)" font-family="Cinzel, serif" font-weight="800" font-size="12">Y</text>
+            <text x="148" y="122" text-anchor="middle" fill="url(#goldCrestGrad)" font-family="Cinzel, serif" font-weight="800" font-size="12">B</text>
+
+            <!-- Majestic Lion Mane & Face Centerpiece -->
+            <g fill="url(#goldCrestGrad)">
+              <!-- Outer Mane Crown -->
+              <path d="M 120,22 C 102,22 89,33 86,48 C 80,55 81,69 87,78 C 88,91 98,103 111,108 L 120,115 L 129,108 C 142,103 152,91 153,78 C 159,69 160,55 154,48 C 151,33 138,22 120,22 Z" opacity="0.95"/>
+              <!-- Inner Face Cutout in Dark Obsidian -->
+              <path d="M 120,38 C 108,38 100,46 99,58 C 98,68 103,79 111,85 L 120,91 L 129,85 C 137,79 142,68 141,58 C 140,46 132,38 120,38 Z" fill="#121215"/>
+              <!-- Lion Brow, Eyes, Nose & Jaw -->
+              <path d="M 106,54 L 116,57 L 113,61 L 105,58 Z"/>
+              <path d="M 134,54 L 124,57 L 127,61 L 135,58 Z"/>
+              <path d="M 116,66 L 124,66 L 120,73 Z"/>
+              <path d="M 111,76 Q 120,82 129,76 Q 125,86 120,87 Q 115,86 111,76 Z"/>
+              <!-- Mane Detail Strokes -->
+              <path d="M 120,24 L 120,35 M 104,28 L 109,38 M 136,28 L 131,38 M 91,43 L 99,49 M 149,43 L 141,49" stroke="#121215" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+            <!-- Lion Paws Grasping the Lower Shield -->
+            <g fill="url(#goldCrestGrad)">
+              <rect x="65" y="136" width="22" height="10" rx="4"/>
+              <line x1="70" y1="136" x2="70" y2="146" stroke="#121215" stroke-width="1.8"/>
+              <line x1="76" y1="136" x2="76" y2="146" stroke="#121215" stroke-width="1.8"/>
+              <line x1="82" y1="136" x2="82" y2="146" stroke="#121215" stroke-width="1.8"/>
+
+              <rect x="153" y="136" width="22" height="10" rx="4"/>
+              <line x1="158" y1="136" x2="158" y2="146" stroke="#121215" stroke-width="1.8"/>
+              <line x1="164" y1="136" x2="164" y2="146" stroke="#121215" stroke-width="1.8"/>
+              <line x1="170" y1="136" x2="170" y2="146" stroke="#121215" stroke-width="1.8"/>
+            </g>
+
+            <!-- Lower Shield Ornamental Emblem -->
+            <path d="M 113,124 L 127,124 L 120,136 Z" fill="url(#goldCrestGrad)"/>
+            <path d="M 103,144 Q 120,156 137,144" fill="none" stroke="url(#goldCrestGrad)" stroke-width="2.5" stroke-linecap="round"/>
+
+            <!-- Curved Company Text Matching the Uploaded Logo -->
+            <text fill="url(#goldCrestGrad)" font-family="Inter, sans-serif" font-weight="700" font-size="11.2" letter-spacing="1.2">
+              <textPath href="#curveTop" startOffset="50%" text-anchor="middle">THE GREATS REMODELING</textPath>
+            </text>
+            <text fill="url(#goldCrestGrad)" font-family="Inter, sans-serif" font-weight="700" font-size="11" letter-spacing="1.1">
+              <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">PAINTING AND MORE LLC</textPath>
+            </text>
+          </svg>
+        </div>
+
+        <div>
+          <span class="block font-display font-bold text-sm sm:text-base md:text-lg tracking-wider text-gold-gradient leading-tight">
+            THE GREAT REMODELING
+          </span>
+          <span class="block text-[11px] sm:text-xs tracking-[0.2em] text-gray-300 uppercase">
+            Painting and more LLC
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-300">
+        <a href="#quienes-somos" class="hover:text-gold-400 transition" data-i18n="navAbout">Quiénes Somos</a>
+        <a href="#pilares" class="hover:text-gold-400 transition" data-i18n="navPillars">Nuestra Esencia</a>
+        <a href="#galeria" class="hover:text-gold-400 transition" data-i18n="navGallery">Galería de Proyectos</a>
+        <a href="#calculadora" class="hover:text-gold-400 transition" data-i18n="navCalc">Cotizador</a>
+        <a href="#empleo" class="hover:text-gold-400 transition text-gold-400" data-i18n="navHiring">Empleos</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="https://wa.me/12545694370?text=Hola%20The%20Great%20Remodeling%20Painting%20and%20more%20LLC,%20me%20gustar%C3%ADa%20solicitar%20informaci%C3%B3n%20sobre%20un%20proyecto."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-gold px-3.5 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2 shadow-md">
+          <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
+          <span data-i18n="navWhatsapp">WhatsApp Directo</span>
+        </a>
+        <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl bg-obsidian-800 border border-gold-500/30 text-gold-400 hover:bg-obsidian-700">
+          <i class="fa-solid fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-obsidian-950 border-t border-gold-500/20 px-4 py-4 space-y-3">
+      <a href="#quienes-somos" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 font-medium" data-i18n="navAbout">Quiénes Somos</a>
+      <a href="#pilares" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 font-medium" data-i18n="navPillars">Nuestra Esencia</a>
+      <a href="#galeria" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 font-medium" data-i18n="navGallery">Galería de Proyectos</a>
+      <a href="#calculadora" onclick="toggleMobileMenu()" class="block py-2 text-gray-200 hover:text-gold-400 font-medium" data-i18n="navCalc">Cotizador Instantáneo</a>
+      <a href="#empleo" onclick="toggleMobileMenu()" class="block py-2 text-gold-400 font-semibold" data-i18n="navHiring">Estamos Contratando Personal</a>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================== -->
+  <section id="inicio" class="hero-bg relative py-16 sm:py-24 lg:py-32 border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-800/90 border border-gold-500/40 text-gold-400 text-xs sm:text-sm font-semibold tracking-wide">
+            <i class="fa-solid fa-crown"></i>
+            <span data-i18n="heroBadge">EXCELENCIA EN REMODELACIÓN Y PINTURA • WEST PALM BEACH, FL</span>
+          </div>
+
+          <h1 class="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+            <span data-i18n="heroTitle1">Transformamos Propiedades en</span>
+            <span class="block text-gold-gradient mt-1" data-i18n="heroTitle2">Obras Maestras de Lujo</span>
+          </h1>
+
+          <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl" data-i18n="heroSubtitle">
+            En <strong class="text-gold-400">The Great Remodeling Painting and more LLC</strong> elevamos el valor, la estética y el confort de casas, habitaciones, apartamentos y locales comerciales. Radicados en West Palm Beach con cobertura total en el Sur de la Florida y Los Cayos.
+          </p>
+
+          <!-- Primary CTA Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <button onclick="openGalleryModal('all')" class="btn-gold px-6 py-4 rounded-xl font-bold text-sm sm:text-base flex items-center gap-2.5 cursor-pointer shadow-gold-strong">
+              <i class="fa-solid fa-images text-lg"></i>
+              <span data-i18n="btnViewPhotos">Ver Miles de Fotos</span>
+            </button>
+
+            <a href="#empleo" class="px-6 py-4 rounded-xl bg-obsidian-850 hover:bg-obsidian-800 border-2 border-gold-500 text-gold-400 hover:text-gold-300 font-bold text-sm sm:text-base flex items-center gap-2.5 transition">
+              <i class="fa-solid fa-helmet-safety"></i>
+              <span data-i18n="btnHiringHero">Estamos Contratando Personal</span>
+            </a>
+          </div>
+
+          <!-- Trust Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-obsidian-700/80 max-w-xl">
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-gold-400">100%</p>
+              <p class="text-xs sm:text-sm text-gray-400" data-i18n="stat1">Acabados Garantizados</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-gold-400">+1,000</p>
+              <p class="text-xs sm:text-sm text-gray-400" data-i18n="stat2">Espacios Renovados</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-gold-400">24/7</p>
+              <p class="text-xs sm:text-sm text-gray-400" data-i18n="stat3">Sur de FL y Los Cayos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Featured Crest Card -->
+        <div class="lg:col-span-5">
+          <div class="bg-obsidian-900/90 backdrop-blur-md border border-gold-500/40 rounded-3xl p-6 sm:p-8 shadow-gold-glow relative overflow-hidden">
+            <div class="absolute -top-16 -right-16 w-44 h-44 bg-gold-500/10 rounded-full blur-2xl"></div>
+
+            <!-- Centered Large Company Emblem -->
+            <div class="w-40 h-40 sm:w-48 sm:h-48 mx-auto mb-5 rounded-2xl bg-obsidian-950 border border-gold-500/40 p-2 shadow-inner flex items-center justify-center">
+              <svg viewBox="0 0 240 230" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="goldCrestHero" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#F6E299"/>
+                    <stop offset="45%" stop-color="#D4AF37"/>
+                    <stop offset="100%" stop-color="#9C761B"/>
+                  </linearGradient>
+                  <path id="curveTopHero" d="M 28,155 A 115,95 0 0,0 212,155" />
+                  <path id="curveBottomHero" d="M 16,172 A 130,108 0 0,0 224,172" />
+                </defs>
+                <path d="M 24,132 L 58,132 L 52,152 L 18,156 L 30,144 Z" fill="none" stroke="url(#goldCrestHero)" stroke-width="3.5" stroke-linejoin="round"/>
+                <path d="M 216,132 L 182,132 L 188,152 L 222,156 L 210,144 Z" fill="none" stroke="url(#goldCrestHero)" stroke-width="3.5" stroke-linejoin="round"/>
+                <path d="M 55,62 L 185,62 L 185,112 C 185,146 150,166 120,178 C 90,166 55,146 55,112 Z" fill="#0D0D0F" stroke="url(#goldCrestHero)" stroke-width="4.5" stroke-linejoin="round"/>
+                <path d="M 63,70 L 177,70 L 177,110 C 177,139 146,157 120,168 C 94,157 63,139 63,110 Z" fill="none" stroke="url(#goldCrestHero)" stroke-width="2" opacity="0.85"/>
+                <circle cx="78" cy="86" r="10" fill="none" stroke="url(#goldCrestHero)" stroke-width="1.8"/>
+                <text x="78" y="90" text-anchor="middle" fill="url(#goldCrestHero)" font-family="Cinzel, serif" font-weight="800" font-size="12">T</text>
+                <circle cx="162" cy="86" r="10" fill="none" stroke="url(#goldCrestHero)" stroke-width="1.8"/>
+                <text x="162" y="90" text-anchor="middle" fill="url(#goldCrestHero)" font-family="Cinzel, serif" font-weight="800" font-size="12">G</text>
+                <text x="92" y="122" text-anchor="middle" fill="url(#goldCrestHero)" font-family="Cinzel, serif" font-weight="800" font-size="12">Y</text>
+                <text x="148" y="122" text-anchor="middle" fill="url(#goldCrestHero)" font-family="Cinzel, serif" font-weight="800" font-size="12">B</text>
+                <g fill="url(#goldCrestHero)">
+                  <path d="M 120,22 C 102,22 89,33 86,48 C 80,55 81,69 87,78 C 88,91 98,103 111,108 L 120,115 L 129,108 C 142,103 152,91 153,78 C 159,69 160,55 154,48 C 151,33 138,22 120,22 Z"/>
+                  <path d="M 120,38 C 108,38 100,46 99,58 C 98,68 103,79 111,85 L 120,91 L 129,85 C 137,79 142,68 141,58 C 140,46 132,38 120,38 Z" fill="#121215"/>
+                  <path d="M 106,54 L 116,57 L 113,61 L 105,58 Z"/>
+                  <path d="M 134,54 L 124,57 L 127,61 L 135,58 Z"/>
+                  <path d="M 116,66 L 124,66 L 120,73 Z"/>
+                  <path d="M 111,76 Q 120,82 129,76 Q 125,86 120,87 Q 115,86 111,76 Z"/>
+                </g>
+                <g fill="url(#goldCrestHero)">
+                  <rect x="65" y="136" width="22" height="10" rx="4"/>
+                  <rect x="153" y="136" width="22" height="10" rx="4"/>
+                </g>
+                <path d="M 113,124 L 127,124 L 120,136 Z" fill="url(#goldCrestHero)"/>
+                <text fill="url(#goldCrestHero)" font-family="Inter, sans-serif" font-weight="700" font-size="11.2" letter-spacing="1.2">
+                  <textPath href="#curveTopHero" startOffset="50%" text-anchor="middle">THE GREATS REMODELING</textPath>
+                </text>
+                <text fill="url(#goldCrestHero)" font-family="Inter, sans-serif" font-weight="700" font-size="11" letter-spacing="1.1">
+                  <textPath href="#curveBottomHero" startOffset="50%" text-anchor="middle">PAINTING AND MORE LLC</textPath>
+                </text>
+              </svg>
+            </div>
+
+            <div class="text-center space-y-3">
+              <h2 class="font-display text-lg sm:text-xl font-bold text-gold-400" data-i18n="cardHeadline">
+                Atención Inmediata y Presupuestos Sin Compromiso
+              </h2>
+              <p class="text-xs sm:text-sm text-gray-300" data-i18n="cardSub">
+                Pintura residencial y comercial, remodelación de cocinas, baños, pisos, drywall y renovación total de exteriores.
+              </p>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="tel:+12545694370" class="px-4 py-3 rounded-xl bg-obsidian-800 hover:bg-obsidian-700 border border-gold-500/40 text-white font-semibold text-sm flex items-center justify-center gap-2 transition">
+                  <i class="fa-solid fa-phone text-gold-400"></i>
+                  <span>+1 (254) 569-4370</span>
+                </a>
+                <a href="https://wa.me/12545694370?text=Hola,%20quisiera%20agendar%20una%20visita%20para%20cotizar%20una%20remodelaci%C3%B3n%20o%20pintura."
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-gold px-4 py-3 rounded-xl font-bold text-sm flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-base"></i>
+                  <span data-i18n="cardQuoteBtn">Cotizar por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PRESENTACIÓN: QUIÉNES SOMOS & COBERTURA SUR DE FLORIDA
+  ========================================================== -->
+  <section id="quienes-somos" class="py-16 sm:py-24 bg-obsidian-900 border-b border-gold-500/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Image Composition -->
+        <div class="relative">
+          <div class="rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-gold-glow">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+                 alt="Interior remodelado por The Great Remodeling Painting and more LLC"
+                 class="w-full h-80 sm:h-[430px] object-cover" />
+          </div>
+          <!-- Floating Coverage Badge -->
+          <div class="mt-4 sm:mt-0 sm:absolute sm:-bottom-6 sm:right-6 bg-obsidian-950 border border-gold-500 rounded-2xl p-4 sm:p-5 shadow-2xl max-w-xs">
+            <div class="flex items-center gap-3">
+              <div class="w-11 h-11 rounded-xl bg-gold-500/15 border border-gold-500/40 flex items-center justify-center text-gold-400 shrink-0">
+                <i class="fa-solid fa-map-location-dot text-xl"></i>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-gold-400 font-bold" data-i18n="hqLabel">Sede Principal</p>
+                <p class="text-sm font-bold text-white">West Palm Beach, Florida</p>
+                <p class="text-xs text-gray-400" data-i18n="hqSub">De Palm Beach hasta Key West</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Presentation -->
+        <div class="space-y-6">
+          <span class="text-gold-400 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm" data-i18n="aboutTag">
+            QUIÉNES SOMOS
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white leading-tight" data-i18n="aboutTitle">
+            Artesanía de Alto Nivel, Compromiso y Elegancia en Cada Detalle
+          </h2>
+          <p class="text-gray-300 leading-relaxed text-base" data-i18n="aboutP1">
+            <strong class="text-gold-400">The Great Remodeling Painting and more LLC</strong> es una compañía especializada en remodelación integral, pintura arquitectónica interior y exterior, y renovación de espacios residenciales y comerciales, con sede en <strong class="text-white">West Palm Beach, Florida</strong>.
+          </p>
+          <p class="text-gray-300 leading-relaxed text-base" data-i18n="aboutP2">
+            Nacimos con la misión de ofrecer un estándar superior en la industria de la construcción y el embellecimiento de propiedades. Nuestro equipo combina técnicas modernas, materiales resistentes al clima tropical de la Florida y una ejecución limpia y puntual, cubriendo actualmente <strong class="text-gold-400">toda el área del Sur de la Florida, incluyendo Los Cayos (The Florida Keys)</strong>.
+          </p>
+
+          <!-- Coverage Cities Pills -->
+          <div class="pt-2">
+            <p class="text-xs font-semibold uppercase tracking-wider text-gold-400 mb-3" data-i18n="coverageLabel">
+              Zonas de Cobertura Activa:
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-obsidian-800 border border-gold-500/30 text-xs sm:text-sm text-gray-200"><i class="fa-solid fa-check text-gold-400 mr-1.5"></i>West Palm Beach</span>
+              <span class="px-3 py-1.5 rounded-lg bg-obsidian-800 border border-gold-500/30 text-xs sm:text-sm text-gray-200"><i class="fa-solid fa-check text-gold-400 mr-1.5"></i>Boca Raton</span>
+              <span class="px-3 py-1.5 rounded-lg bg-obsidian-800 border border-gold-500/30 text-xs sm:text-sm text-gray-200"><i class="fa-solid fa-check text-gold-400 mr-1.5"></i>Fort Lauderdale</span>
+              <span class="px-3 py-1.5 rounded-lg bg-obsidian-800 border border-gold-500/30 text-xs sm:text-sm text-gray-200"><i class="fa-solid fa-check text-gold-400 mr-1.5"></i>Miami-Dade</span>
+              <span class="px-3 py-1.5 rounded-lg bg-obsidian-800 border border-gold-500/30 text-xs sm:text-sm text-gray-200"><i class="fa-solid fa-check text-gold-400 mr-1.5"></i>Key Largo & Islamorada</span>
+              <span class="px-3 py-1.5 rounded-lg bg-obsidian-800 border border-gold-500/30 text-xs sm:text-sm text-gold-300 font-semibold"><i class="fa-solid fa-umbrella-beach text-gold-400 mr-1.5"></i>Todos Los Cayos (Key West)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       BOTONES INTERACTIVOS: VISIÓN, CLIENTES, EXPECTATIVAS Y CONTACTO
+  ========================================================== -->
+  <section id="pilares" class="py-16 sm:py-24 bg-obsidian-950 border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="text-gold-400 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm" data-i18n="pillarsTag">
+          CONÓCENOS A FONDO
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white" data-i18n="pillarsTitle">
+          Nuestra Filosofía y Compromiso Contigo
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base" data-i18n="pillarsDesc">
+          Selecciona cada botón interactivo para descubrir nuestra visión, a quién servimos, qué puedes esperar de nuestro equipo y cómo contactarnos de inmediato.
+        </p>
+      </div>
+
+      <!-- 4 Interactive Pillar Buttons -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <button onclick="selectPillar('vision')" id="btn-pillar-vision"
+                class="pillar-btn active-pillar p-5 rounded-2xl border-2 border-gold-500 bg-obsidian-850 text-left transition-all cursor-pointer shadow-gold-glow flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-gold-500 text-obsidian-950 flex items-center justify-center shrink-0 text-xl">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div>
+            <span class="block font-display font-bold text-base sm:text-lg text-gold-400" data-i18n="tabVisionBtn">Nuestra Visión</span>
+            <span class="text-xs text-gray-400" data-i18n="tabVisionSub">Hacia dónde vamos</span>
+          </div>
+        </button>
+
+        <button onclick="selectPillar('clientes')" id="btn-pillar-clientes"
+                class="pillar-btn p-5 rounded-2xl border border-obsidian-700 hover:border-gold-500/60 bg-obsidian-900 text-left transition-all cursor-pointer flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-obsidian-800 text-gold-400 flex items-center justify-center shrink-0 text-xl">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <span class="block font-display font-bold text-base sm:text-lg text-white" data-i18n="tabClientsBtn">¿Quién Puede Ser Nuestro Cliente?</span>
+            <span class="text-xs text-gray-400" data-i18n="tabClientsSub">Perfiles y propiedades</span>
+          </div>
+        </button>
+
+        <button onclick="selectPillar('expectativas')" id="btn-pillar-expectativas"
+                class="pillar-btn p-5 rounded-2xl border border-obsidian-700 hover:border-gold-500/60 bg-obsidian-900 text-left transition-all cursor-pointer flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-obsidian-800 text-gold-400 flex items-center justify-center shrink-0 text-xl">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <span class="block font-display font-bold text-base sm:text-lg text-white" data-i18n="tabExpectBtn">¿Qué Espera el Cliente de Nosotros?</span>
+            <span class="text-xs text-gray-400" data-i18n="tabExpectSub">Garantías y estándares</span>
+          </div>
+        </button>
+
+        <button onclick="selectPillar('contacto')" id="btn-pillar-contacto"
+                class="pillar-btn p-5 rounded-2xl border border-obsidian-700 hover:border-gold-500/60 bg-obsidian-900 text-left transition-all cursor-pointer flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-obsidian-800 text-gold-400 flex items-center justify-center shrink-0 text-xl">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <div>
+            <span class="block font-display font-bold text-base sm:text-lg text-white" data-i18n="tabContactBtn">Contacto Directo</span>
+            <span class="text-xs text-gray-400" data-i18n="tabContactSub">Teléfono y WhatsApp</span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Dynamic Interactive Display Panel -->
+      <div id="pillarDisplayBox" class="bg-obsidian-900 border border-gold-500/40 rounded-3xl p-6 sm:p-10 shadow-2xl min-h-[300px] flex items-center">
+        <!-- Content injected dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       GALERÍA INTERACTIVA: "VER MILES DE FOTOS" (INTERIORES Y EXTERIORES)
+  ========================================================== -->
+  <section id="galeria" class="py-16 sm:py-24 bg-obsidian-900 border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Header + Prominent Button -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+        <div class="space-y-3">
+          <span class="text-gold-400 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm" data-i18n="galTag">
+            PORTAFOLIO DE TRANSFORMACIONES
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white" data-i18n="galTitle">
+            Interiores y Exteriores Remodelados
+          </h2>
+          <p class="text-gray-400 max-w-2xl text-sm sm:text-base" data-i18n="galDesc">
+            Explora nuestros acabados de pintura, cocinas modernas, habitaciones de lujo y fachadas renovadas en West Palm Beach, Miami y Los Cayos.
+          </p>
+        </div>
+
+        <button onclick="openGalleryModal('all')" class="btn-gold px-7 py-4 rounded-2xl font-bold text-sm sm:text-base flex items-center justify-center gap-3 cursor-pointer shrink-0 shadow-gold-strong">
+          <i class="fa-solid fa-layer-group text-lg"></i>
+          <span data-i18n="galMegaBtn">Ver Miles de Fotos (Galería Completa)</span>
+        </button>
+      </div>
+
+      <!-- Interactive Category Filter Buttons -->
+      <div class="flex flex-wrap gap-3 mb-8">
+        <button onclick="filterInlineGallery('all')" id="filter-all" class="gal-filter-btn px-5 py-2.5 rounded-xl bg-gold-500 text-obsidian-950 font-bold text-sm transition cursor-pointer">
+          <i class="fa-solid fa-border-all mr-1.5"></i><span data-i18n="filterAll">Todos los Proyectos</span>
+        </button>
+        <button onclick="filterInlineGallery('interior')" id="filter-interior" class="gal-filter-btn px-5 py-2.5 rounded-xl bg-obsidian-800 text-gray-300 hover:text-gold-400 border border-gold-500/30 font-semibold text-sm transition cursor-pointer">
+          <i class="fa-solid fa-couch mr-1.5"></i><span data-i18n="filterInt">Interiores Remodelados</span>
+        </button>
+        <button onclick="filterInlineGallery('exterior')" id="filter-exterior" class="gal-filter-btn px-5 py-2.5 rounded-xl bg-obsidian-800 text-gray-300 hover:text-gold-400 border border-gold-500/30 font-semibold text-sm transition cursor-pointer">
+          <i class="fa-solid fa-house-chimney mr-1.5"></i><span data-i18n="filterExt">Exteriores Remodelados</span>
+        </button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div id="inlineGalleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Interactive Before & After Comparison Showcase -->
+      <div class="mt-16 bg-obsidian-950 border border-gold-500/35 rounded-3xl p-6 sm:p-10">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">
+              <i class="fa-solid fa-wand-magic-sparkles mr-1"></i> <span data-i18n="baBadge">Comparador Interactivo</span>
+            </span>
+            <h3 class="font-display text-2xl sm:text-3xl font-bold text-white" data-i18n="baTitle">
+              Desliza para Ver el Antes y Después
+            </h3>
+            <p class="text-gray-400 text-sm sm:text-base leading-relaxed" data-i18n="baDesc">
+              Arrastra la barra dorada hacia la izquierda o derecha para apreciar cómo transformamos espacios desgastados en ambientes modernos, iluminados y con acabados de primera calidad.
+            </p>
+            <div class="pt-2">
+              <button onclick="openGalleryModal('all')" class="px-5 py-3 rounded-xl border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-obsidian-950 font-bold text-sm transition cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass-plus mr-2"></i><span data-i18n="baMoreBtn">Explorar Más Transformaciones</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div id="baSlider" class="ba-container w-full h-72 sm:h-96 rounded-2xl border-2 border-gold-500/50 shadow-2xl">
+              <!-- AFTER Image (Base Layer) -->
+              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80"
+                   alt="Después de la remodelación"
+                   class="w-full h-full object-cover" />
+              <span class="absolute top-4 right-4 bg-obsidian-950/90 border border-gold-500 text-gold-400 px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider z-10">
+                DESPUÉS / AFTER
+              </span>
+
+              <!-- BEFORE Image (Clipped Overlay) -->
+              <div id="baBeforeLayer" class="ba-before">
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80"
+                     alt="Antes de la remodelación"
+                     class="w-full h-full object-cover filter grayscale contrast-75 brightness-75"
+                     style="width: 100%; max-width: none;" />
+                <span class="absolute top-4 left-4 bg-obsidian-950/90 border border-gray-500 text-gray-200 px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider z-10">
+                  ANTES / BEFORE
+                </span>
+              </div>
+
+              <!-- Draggable Gold Divider -->
+              <div id="baDivider" class="ba-divider">
+                <div class="ba-handle">
+                  <i class="fa-solid fa-arrows-left-right text-sm"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       HERRAMIENTA EXTRA DE ALTO ALCANCE: CALCULADORA DE PRESUPUESTO
+  ========================================================== -->
+  <section id="calculadora" class="py-16 sm:py-24 bg-obsidian-950 border-b border-gold-500/20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10 space-y-3">
+        <span class="text-gold-400 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm" data-i18n="calcTag">
+          HERRAMIENTA INTELIGENTE DE ALCANCE
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white" data-i18n="calcTitle">
+          Calcula un Estimado Rápido para tu Propiedad
+        </h2>
+        <p class="text-gray-400 text-sm sm:text-base" data-i18n="calcDesc">
+          Personaliza los detalles de tu proyecto en West Palm Beach, Miami o Los Cayos y envía tu solicitud directo a nuestro WhatsApp en un clic.
+        </p>
+      </div>
+
+      <div class="bg-obsidian-900 border border-gold-500/40 rounded-3xl p-6 sm:p-10 shadow-gold-glow">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Controls -->
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gold-400 mb-2" data-i18n="calcServiceLabel">
+                1. Tipo de Servicio
+              </label>
+              <select id="calcService" onchange="updateEstimate()" class="w-full bg-obsidian-800 border border-obsidian-700 focus:border-gold-500 rounded-xl px-4 py-3 text-white text-sm outline-none">
+                <option value="paint_int">Pintura Interior de Lujo</option>
+                <option value="paint_ext">Pintura Exterior (Resistencia Tropical)</option>
+                <option value="remodel_room">Remodelación de Habitación / Sala</option>
+                <option value="remodel_full">Remodelación Integral (Cocina / Baño / Casa)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-gold-400 mb-2" data-i18n="calcZoneLabel">
+                2. Ubicación en el Sur de la Florida
+              </label>
+              <select id="calcZone" onchange="updateEstimate()" class="w-full bg-obsidian-800 border border-obsidian-700 focus:border-gold-500 rounded-xl px-4 py-3 text-white text-sm outline-none">
+                <option value="West Palm Beach / Palm Beach County">West Palm Beach / Palm Beach County</option>
+                <option value="Boca Raton / Broward">Boca Raton / Fort Lauderdale (Broward)</option>
+                <option value="Miami-Dade">Miami-Dade</option>
+                <option value="The Florida Keys (Los Cayos)">The Florida Keys (Los Cayos)</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-bold uppercase tracking-wider mb-2">
+                <span class="text-gold-400" data-i18n="calcAreaLabel">3. Área Aproximada (Pies Cuadrados / Sq Ft)</span>
+                <span id="sqftDisplay" class="text-white bg-obsidian-800 px-2.5 py-0.5 rounded border border-gold-500/30">1,200 sq ft</span>
+              </div>
+              <input type="range" id="calcSqft" min="300" max="5000" step="100" value="1200" oninput="updateEstimate()"
+                     class="w-full accent-gold-500 cursor-pointer h-2 bg-obsidian-800 rounded-lg" />
+              <div class="flex justify-between text-[11px] text-gray-500 mt-1">
+                <span>300 sq ft (1 Habitación)</span>
+                <span>2,500 sq ft (Casa)</span>
+                <span>5,000 sq ft (Mansión/Local)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Output Box -->
+          <div class="bg-obsidian-950 border border-gold-500/30 rounded-2xl p-6 flex flex-col justify-between">
+            <div class="space-y-3">
+              <span class="text-xs uppercase tracking-widest text-gray-400 font-semibold" data-i18n="calcEstHeader">
+                Inversión Estimada Referencial
+              </span>
+              <div id="estimateRange" class="font-display text-3xl sm:text-4xl font-extrabold text-gold-gradient">
+                $2,400 – $3,600
+              </div>
+              <p class="text-xs text-gray-400 leading-relaxed" data-i18n="calcDisclaimer">
+                *Incluye mano de obra especializada y preparación de superficies. El precio final exacto se confirma tras nuestra inspección gratuita en sitio.
+              </p>
+            </div>
+
+            <div class="pt-6 space-y-3">
+              <button onclick="sendEstimateToWhatsapp()" class="btn-gold w-full py-3.5 px-5 rounded-xl font-bold text-sm flex items-center justify-center gap-2 cursor-pointer">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span data-i18n="calcSendBtn">Enviar Cotización por WhatsApp</span>
+              </button>
+              <a href="tel:+12545694370" class="w-full py-3 px-5 rounded-xl bg-obsidian-800 hover:bg-obsidian-700 text-gray-200 font-semibold text-xs sm:text-sm flex items-center justify-center gap-2 transition">
+                <i class="fa-solid fa-phone text-gold-400"></i>
+                <span>Llamar Ahora: +1 (254) 569-4370</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SECCIÓN DE RECLUTAMIENTO: "ESTAMOS CONTRATANDO PERSONAL"
+  ========================================================== -->
+  <section id="empleo" class="py-16 sm:py-24 bg-obsidian-900 border-b border-gold-500/20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.12),transparent_60%)]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="bg-obsidian-950 border-2 border-gold-500 rounded-3xl p-6 sm:p-12 shadow-gold-glow">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500 text-obsidian-950 font-extrabold text-xs uppercase tracking-wider">
+              <i class="fa-solid fa-bullhorn"></i>
+              <span data-i18n="hiringBadge">OPORTUNIDAD LABORAL EN SUR DE FLORIDA</span>
+            </div>
+
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white" data-i18n="hiringTitle">
+              ¡Estamos Contratando Personal!
+            </h2>
+
+            <p class="text-gray-300 text-base leading-relaxed" data-i18n="hiringDesc">
+              En <strong class="text-gold-400">The Great Remodeling Painting and more LLC</strong> seguimos creciendo en West Palm Beach, Miami y Los Cayos. Buscamos personas responsables, detallistas y con ganas de prosperar en equipo.
+            </p>
+
+            <!-- Open Positions Grid -->
+            <div class="grid sm:grid-cols-2 gap-3 pt-2">
+              <div class="p-3.5 rounded-xl bg-obsidian-900 border border-gold-500/30 flex items-center gap-3">
+                <i class="fa-solid fa-paint-roller text-gold-400 text-lg"></i>
+                <span class="text-sm font-semibold text-gray-200" data-i18n="job1">Pintores Profesionales (Int/Ext)</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-obsidian-900 border border-gold-500/30 flex items-center gap-3">
+                <i class="fa-solid fa-hammer text-gold-400 text-lg"></i>
+                <span class="text-sm font-semibold text-gray-200" data-i18n="job2">Especialistas en Drywall y Framing</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-obsidian-900 border border-gold-500/30 flex items-center gap-3">
+                <i class="fa-solid fa-border-none text-gold-400 text-lg"></i>
+                <span class="text-sm font-semibold text-gray-200" data-i18n="job3">Instaladores de Pisos y Tile</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-obsidian-900 border border-gold-500/30 flex items-center gap-3">
+                <i class="fa-solid fa-screwdriver-wrench text-gold-400 text-lg"></i>
+                <span class="text-sm font-semibold text-gray-200" data-i18n="job4">Ayudantes Generales de Remodelación</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct WhatsApp Apply Card -->
+          <div class="lg:col-span-5 bg-obsidian-900 border border-gold-500/40 rounded-2xl p-6 sm:p-8 text-center space-y-5">
+            <div class="w-16 h-16 rounded-2xl bg-gold-500/15 border border-gold-500 text-gold-400 flex items-center justify-center mx-auto text-3xl">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 class="font-display text-xl sm:text-2xl font-bold text-white" data-i18n="applyCardTitle">
+              Postúlate Hoy Mismo por WhatsApp
+            </h3>
+            <p class="text-sm text-gray-400" data-i18n="applyCardDesc">
+              Pulsa el botón para abrir WhatsApp directamente y envíanos tu nombre, experiencia y ciudad de residencia.
+            </p>
+            <a href="https://wa.me/12545694370?text=Hola%20The%20Great%20Remodeling%20Painting%20and%20more%20LLC,%20vi%20que%20est%C3%A1n%20contratando%20personal%20y%20me%20gustar%C3%ADa%20postularme."
+               target="_blank" rel="noopener noreferrer"
+               class="btn-gold w-full py-4 px-6 rounded-xl font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-gold-strong">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span data-i18n="applyWhatsappBtn">Contactar por WhatsApp para Empleo</span>
+            </a>
+            <p class="text-xs text-gray-500">
+              Tel: +1 (254) 569-4370 • West Palm Beach, FL
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       RESEÑAS DE CLIENTES & REDES SOCIALES (ALCANCE Y CONFIANZA)
+  ========================================================== -->
+  <section class="py-16 bg-obsidian-950 border-b border-gold-500/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-gold-400 font-bold uppercase tracking-[0.2em] text-xs">TESTIMONIOS REALES</span>
+        <h2 class="font-display text-2xl sm:text-3xl font-bold text-white mt-2" data-i18n="reviewsTitle">
+          Lo Que Dicen Nuestros Clientes en Florida
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-obsidian-900 border border-gold-500/25 rounded-2xl p-6 space-y-4">
+          <div class="text-gold-400 text-sm flex gap-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-300 text-sm italic">
+            "Pintaron todo el exterior e interior de nuestra casa en West Palm Beach. Impecables, puntuales y con un acabado de revista. Totalmente recomendados."
+          </p>
+          <div class="pt-2 border-t border-obsidian-800">
+            <p class="font-bold text-white text-sm">Carlos M.</p>
+            <p class="text-xs text-gold-400">West Palm Beach, FL</p>
+          </div>
+        </div>
+
+        <div class="bg-obsidian-900 border border-gold-500/25 rounded-2xl p-6 space-y-4">
+          <div class="text-gold-400 text-sm flex gap-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-300 text-sm italic">
+            "Remodelaron nuestra propiedad vacacional en Key Largo. Viajaron hasta Los Cayos y cumplieron cada fecha acordada. La calidad del trabajo es de 10 estrellas."
+          </p>
+          <div class="pt-2 border-t border-obsidian-800">
+            <p class="font-bold text-white text-sm">Elena & David R.</p>
+            <p class="text-xs text-gold-400">Key Largo, Florida Keys</p>
+          </div>
+        </div>
+
+        <div class="bg-obsidian-900 border border-gold-500/25 rounded-2xl p-6 space-y-4">
+          <div class="text-gold-400 text-sm flex gap-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-gray-300 text-sm italic">
+            "Transformaron dos habitaciones y la sala principal en Miami. Muy organizados, protegen todos los muebles y dejan todo reluciente al terminar."
+          </p>
+          <div class="pt-2 border-t border-obsidian-800">
+            <p class="font-bold text-white text-sm">Roberto G.</p>
+            <p class="text-xs text-gold-400">Miami, FL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER CORPORATIVO
+  ========================================================== -->
+  <footer class="bg-obsidian-950 pt-14 pb-24 sm:pb-14 text-gray-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-10 pb-10 border-b border-obsidian-800">
+        <!-- Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-obsidian-900 border border-gold-500/40 p-1 flex items-center justify-center">
+              <i class="fa-solid fa-crown text-gold-400 text-xl"></i>
+            </div>
+            <div>
+              <p class="font-display font-bold text-gold-400 text-base">The Great Remodeling</p>
+              <p class="text-xs text-gray-400 uppercase tracking-widest">Painting and more LLC</p>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed text-gray-400">
+            Especialistas en remodelación de propiedades, casas, habitaciones y pintura profesional. Radicados en West Palm Beach, sirviendo a todo el Sur de la Florida y Los Cayos.
+          </p>
+          <button onclick="copyPhoneNumber()" class="inline-flex items-center gap-2 text-xs text-gold-400 hover:text-gold-300 cursor-pointer">
+            <i class="fa-regular fa-copy"></i>
+            <span id="copyPhoneText">Copiar teléfono: +1 (254) 569-4370</span>
+          </button>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-white uppercase tracking-wider text-xs">Navegación Rápida</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#quienes-somos" class="hover:text-gold-400 transition">Quiénes Somos</a></li>
+            <li><a href="#pilares" class="hover:text-gold-400 transition">Visión y Compromiso con el Cliente</a></li>
+            <li><a href="#galeria" onclick="openGalleryModal('all')" class="hover:text-gold-400 transition">Ver Miles de Fotos (Interiores y Exteriores)</a></li>
+            <li><a href="#calculadora" class="hover:text-gold-400 transition">Calculadora de Presupuesto</a></li>
+            <li><a href="#empleo" class="hover:text-gold-400 transition text-gold-400">Estamos Contratando Personal</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-white uppercase tracking-wider text-xs">Contacto Oficial</h4>
+          <p class="text-xs flex items-center gap-2">
+            <i class="fa-solid fa-location-dot text-gold-400"></i>
+            <span>West Palm Beach, FL (Sur de Florida & Los Cayos)</span>
+          </p>
+          <p class="text-xs flex items-center gap-2">
+            <i class="fa-solid fa-phone text-gold-400"></i>
+            <a href="tel:+12545694370" class="hover:text-gold-400">+1 (254) 569-4370</a>
+          </p>
+          <div class="pt-2">
+            <a href="https://wa.me/12545694370" target="_blank" rel="noopener noreferrer"
+               class="btn-gold inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Chatear por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© 2026 The Great Remodeling Painting and more LLC. Todos los derechos reservados.</p>
+        <p class="text-gold-500/80">West Palm Beach • Miami • The Florida Keys</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       FLOATING WHATSAPP ACTION BUTTON (ALWAYS ACCESSIBLE)
+  ========================================================== -->
+  <a href="https://wa.me/12545694370?text=Hola%20The%20Great%20Remodeling%20Painting%20and%20more%20LLC,%20necesito%20informaci%C3%B3n%20sobre%20sus%20servicios."
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp"
+     class="fixed bottom-5 right-5 z-50 btn-gold px-4 py-3.5 rounded-full shadow-2xl flex items-center gap-2.5 font-extrabold text-sm border-2 border-obsidian-950">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
+
+  <!-- =========================================================
+       MODAL INTERACTIVO DE GALERÍA ("VER MILES DE FOTOS")
+  ========================================================== -->
+  <div id="galleryModal" class="fixed inset-0 z-50 hidden bg-obsidian-950/95 backdrop-blur-lg overflow-y-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <!-- Top Modal Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-gold-500/30 sticky top-0 bg-obsidian-950/95 z-20 pt-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-gold-400">GALERÍA DE PROYECTOS REALIZADOS</span>
+          <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">Interiores y Exteriores Remodelados</h3>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/12545694370?text=Hola,%20vi%20sus%20fotos%20de%20remodelaci%C3%B3n%20y%20quiero%20cotizar%20un%20trabajo%20similar."
+             target="_blank" rel="noopener noreferrer"
+             class="btn-gold px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Cotizar Este Estilo</span>
+          </a>
+          <button onclick="closeGalleryModal()" class="w-11 h-11 rounded-xl bg-obsidian-800 hover:bg-gold-500 hover:text-obsidian-950 text-white border border-gold-500/40 flex items-center justify-center transition cursor-pointer">
+            <i class="fa-solid fa-xmark text-xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Filter Tabs -->
+      <div class="flex flex-wrap gap-3 my-6">
+        <button onclick="renderModalGallery('all')" id="modal-tab-all" class="modal-filter-btn px-5 py-2.5 rounded-xl bg-gold-500 text-obsidian-950 font-bold text-sm cursor-pointer">
+          Todas las Fotos (12 Destacadas)
+        </button>
+        <button onclick="renderModalGallery('interior')" id="modal-tab-interior" class="modal-filter-btn px-5 py-2.5 rounded-xl bg-obsidian-800 text-gray-200 border border-gold-500/30 font-semibold text-sm cursor-pointer">
+          Interiores Remodelados
+        </button>
+        <button onclick="renderModalGallery('exterior')" id="modal-tab-exterior" class="modal-filter-btn px-5 py-2.5 rounded-xl bg-obsidian-800 text-gray-200 border border-gold-500/30 font-semibold text-sm cursor-pointer">
+          Exteriores Remodelados
+        </button>
+      </div>
+
+      <!-- Modal Photo Grid -->
+      <div id="modalGalleryGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       JAVASCRIPT LOGIC (INTERACTIVITY, GALLERY, SLIDER, I18N)
+  ========================================================== -->
+  <script>
+    // 1. Portfolio Photo Data (Interiores & Exteriores Remodelados)
+    const portfolioPhotos = [
+      {
+        id: 1,
+        category: 'interior',
+        titleEs: 'Sala Principal y Pintura Arquitectónica',
+        titleEn: 'Luxury Living Room & Architectural Painting',
+        location: 'West Palm Beach, FL',
+        img: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 2,
+        category: 'exterior',
+        titleEs: 'Fachada Residencial y Pintura Exterior',
+        titleEn: 'Residential Facade & Exterior Coating',
+        location: 'Boca Raton, FL',
+        img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 3,
+        category: 'interior',
+        titleEs: 'Cocina Moderna Remodelada de Lujo',
+        titleEn: 'Modern Luxury Kitchen Remodel',
+        location: 'Miami, FL',
+        img: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 4,
+        category: 'exterior',
+        titleEs: 'Residencia Costera en Los Cayos',
+        titleEn: 'Coastal Residence in The Florida Keys',
+        location: 'Key Largo, FL',
+        img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 5,
+        category: 'interior',
+        titleEs: 'Habitación Master Suite Renovada',
+        titleEn: 'Renovated Master Suite Bedroom',
+        location: 'Fort Lauderdale, FL',
+        img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 6,
+        category: 'exterior',
+        titleEs: 'Exterior Contemporáneo y Terraza',
+        titleEn: 'Contemporary Exterior & Patio Finish',
+        location: 'Palm Beach Gardens, FL',
+        img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 7,
+        category: 'interior',
+        titleEs: 'Baño Tipo Spa y Revestimiento Premium',
+        titleEn: 'Spa-Style Bathroom & Premium Tile',
+        location: 'Coral Gables, FL',
+        img: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 8,
+        category: 'exterior',
+        titleEs: 'Renovación de Exteriores y Piscina',
+        titleEn: 'Exterior Renovation & Pool Deck',
+        location: 'Islamorada, FL Keys',
+        img: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=900&q=80'
+      },
+      {
+        id: 9,
+        category: 'interior',
+        titleEs: 'Comedor y Acabados en Drywall / Pintura',
+        titleEn: 'Dining Area & Custom Drywall / Paint',
+        location: 'Wellington, FL',
+        img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80'
+      }
+    ];
+
+    let currentLang = 'es';
+
+    // 2. Render Inline Gallery (6 items preview)
+    function filterInlineGallery(filter) {
+      const grid = document.getElementById('inlineGalleryGrid');
+      const buttons = document.querySelectorAll('.gal-filter-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-gold-500', 'text-obsidian-950', 'font-bold');
+        btn.classList.add('bg-obsidian-800', 'text-gray-300', 'border', 'border-gold-500/30');
+      });
+
+      const activeBtn = document.getElementById(`filter-${filter}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-obsidian-800', 'text-gray-300', 'border', 'border-gold-500/30');
+        activeBtn.classList.add('bg-gold-500', 'text-obsidian-950', 'font-bold');
+      }
+
+      const filtered = filter === 'all'
+        ? portfolioPhotos.slice(0, 6)
+        : portfolioPhotos.filter(p => p.category === filter);
+
+      grid.innerHTML = filtered.map(item => `
+        <div class="group bg-obsidian-950 border border-gold-500/25 hover:border-gold-500 rounded-2xl overflow-hidden transition-all duration-300 shadow-lg flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img src="${item.img}" alt="${currentLang === 'es' ? item.titleEs : item.titleEn}"
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500" loading="lazy" />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-obsidian-950/90 border border-gold-500/50 text-gold-400 text-xs font-bold uppercase">
+              ${item.category === 'interior' ? (currentLang === 'es' ? 'Interior' : 'Interior') : (currentLang === 'es' ? 'Exterior' : 'Exterior')}
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <h4 class="font-display font-bold text-white text-base group-hover:text-gold-400 transition">
+                ${currentLang === 'es' ? item.titleEs : item.titleEn}
+              </h4>
+              <p class="text-xs text-gray-400 mt-1">
+                <i class="fa-solid fa-location-dot text-gold-500 mr-1"></i>${item.location}
+              </p>
+            </div>
+            <a href="https://wa.me/12545694370?text=Hola,%20me%20interesa%20un%20proyecto%20como:%20${encodeURIComponent(item.titleEs)}"
+               target="_blank" rel="noopener noreferrer"
+               class="text-xs font-bold text-gold-400 hover:text-gold-300 inline-flex items-center gap-1.5 pt-2 border-t border-obsidian-800">
+              <span>${currentLang === 'es' ? 'Solicitar presupuesto similar' : 'Request similar quote'}</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // 3. Full Gallery Modal ("Ver Miles de Fotos")
+    function openGalleryModal(filter = 'all') {
+      const modal = document.getElementById('galleryModal');
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      renderModalGallery(filter);
+    }
+
+    function closeGalleryModal() {
+      const modal = document.getElementById('galleryModal');
+      modal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    function renderModalGallery(filter) {
+      const grid = document.getElementById('modalGalleryGrid');
+      const tabs = document.querySelectorAll('.modal-filter-btn');
+
+      tabs.forEach(t => {
+        t.classList.remove('bg-gold-500', 'text-obsidian-950', 'font-bold');
+        t.classList.add('bg-obsidian-800', 'text-gray-200', 'border', 'border-gold-500/30');
+      });
+
+      const activeTab = document.getElementById(`modal-tab-${filter}`);
+      if (activeTab) {
+        activeTab.classList.remove('bg-obsidian-800', 'text-gray-200', 'border', 'border-gold-500/30');
+        activeTab.classList.add('bg-gold-500', 'text-obsidian-950', 'font-bold');
+      }
+
+      const items = filter === 'all'
+        ? portfolioPhotos
+        : portfolioPhotos.filter(p => p.category === filter);
+
+      grid.innerHTML = items.map(item => `
+        <div class="bg-obsidian-900 border border-gold-500/30 rounded-2xl overflow-hidden shadow-xl">
+          <div class="relative h-64">
+            <img src="${item.img}" alt="${item.titleEs}" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-obsidian-950/90 text-gold-400 border border-gold-500/40 text-xs font-bold uppercase">
+              ${item.category === 'interior' ? 'Interior Remodelado' : 'Exterior Remodelado'}
+            </span>
+          </div>
+          <div class="p-4 flex items-center justify-between gap-2">
+            <div>
+              <h5 class="font-bold text-white text-sm">${currentLang === 'es' ? item.titleEs : item.titleEn}</h5>
+              <p class="text-xs text-gray-400">${item.location}</p>
+            </div>
+            <a href="https://wa.me/12545694370?text=Hola,%20quiero%20cotizar%20un%20trabajo%20como:%20${encodeURIComponent(item.titleEs)}"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-gold px-3 py-2 rounded-lg text-xs font-bold shrink-0">
+              <i class="fa-brands fa-whatsapp mr-1"></i>Cotizar
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // 4. Interactive Pillars Content (Visión, Clientes, Expectativas, Contacto)
+    const pillarsData = {
+      vision: {
+        es: `
+          <div class="animate-fade-slide grid md:grid-cols-12 gap-8 items-center w-full">
+            <div class="md:col-span-8 space-y-4">
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">NUESTRA VISIÓN</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">Ser el Referente Número Uno en Remodelación y Pintura en el Sur de la Florida</h3>
+              <p class="text-gray-300 leading-relaxed">
+                Aspiramos a consolidarnos como la empresa líder y más confiable desde <strong class="text-gold-400">West Palm Beach hasta Los Cayos de la Florida</strong>, redefiniendo la experiencia de remodelar una propiedad. Queremos que cada hogar, habitación o comercio transformado por nuestras manos refleje distinción, durabilidad frente al clima costero y un valor patrimonial superior.
+              </p>
+              <div class="grid sm:grid-cols-2 gap-3 pt-2">
+                <div class="p-3.5 rounded-xl bg-obsidian-950 border border-gold-500/25 text-sm text-gray-200">
+                  <i class="fa-solid fa-gem text-gold-400 mr-2"></i>Innovación continua en acabados y texturas
+                </div>
+                <div class="p-3.5 rounded-xl bg-obsidian-950 border border-gold-500/25 text-sm text-gray-200">
+                  <i class="fa-solid fa-shield-halved text-gold-400 mr-2"></i>Crecimiento sostenible en todo Florida
+                </div>
+              </div>
+            </div>
+            <div class="md:col-span-4 bg-obsidian-950 border border-gold-500/40 rounded-2xl p-6 text-center space-y-3">
+              <i class="fa-solid fa-crown text-4xl text-gold-400"></i>
+              <p class="font-display font-bold text-white text-lg">Calidad Sin Atajos</p>
+              <p class="text-xs text-gray-400">Cada brocha, cada corte y cada instalación lleva nuestro sello de excelencia.</p>
+            </div>
+          </div>
+        `,
+        en: `
+          <div class="animate-fade-slide grid md:grid-cols-12 gap-8 items-center w-full">
+            <div class="md:col-span-8 space-y-4">
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">OUR VISION</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">To Be the #1 Benchmark in Remodeling & Painting Across South Florida</h3>
+              <p class="text-gray-300 leading-relaxed">
+                We strive to be the most trusted remodeling company from <strong class="text-gold-400">West Palm Beach down to the Florida Keys</strong>, elevating every home, room, and commercial space with coastal-grade durability and timeless luxury.
+              </p>
+            </div>
+            <div class="md:col-span-4 bg-obsidian-950 border border-gold-500/40 rounded-2xl p-6 text-center space-y-3">
+              <i class="fa-solid fa-crown text-4xl text-gold-400"></i>
+              <p class="font-display font-bold text-white text-lg">Zero Shortcuts</p>
+              <p class="text-xs text-gray-400">Every brushstroke and installation carries our signature of excellence.</p>
+            </div>
+          </div>
+        `
+      },
+      clientes: {
+        es: `
+          <div class="animate-fade-slide w-full space-y-6">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">¿QUIÉN PUEDE SER NUESTRO CLIENTE?</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mt-2">Soluciones a la Medida para Cada Tipo de Propiedad</h3>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-house-user text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Propietarios de Casas</h4>
+                <p class="text-xs text-gray-400">Familias que desean renovar su hogar, pintar fachadas, modernizar habitaciones, cocinas o baños.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-key text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Inversionistas y Realtors</h4>
+                <p class="text-xs text-gray-400">Quienes compran propiedades para renovar (Flipping) y maximizar su valor de venta o renta en Florida.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-umbrella-beach text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Dueños de Airbnb / Cayos</h4>
+                <p class="text-xs text-gray-400">Propiedades vacacionales en West Palm Beach, Miami y Los Cayos que requieren mantenimiento y lujo inmediato.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-building text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Comercios y Oficinas</h4>
+                <p class="text-xs text-gray-400">Locales comerciales, restaurantes y condominios que buscan una imagen ejecutiva impecable.</p>
+              </div>
+            </div>
+          </div>
+        `,
+        en: `
+          <div class="animate-fade-slide w-full space-y-6">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">WHO CAN BE OUR CLIENT?</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mt-2">Tailored Solutions for Every Property Owner</h3>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-house-user text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Homeowners</h4>
+                <p class="text-xs text-gray-400">Families looking to refresh interiors, exteriors, bedrooms, kitchens, or full homes.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-key text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Investors & Realtors</h4>
+                <p class="text-xs text-gray-400">Real estate professionals maximizing property resale and rental value across South Florida.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-umbrella-beach text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Vacation Rentals & Keys</h4>
+                <p class="text-xs text-gray-400">Airbnb & coastal homeowners from Palm Beach down to Key West.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-obsidian-950 border border-gold-500/30 space-y-2">
+                <i class="fa-solid fa-building text-2xl text-gold-400"></i>
+                <h4 class="font-bold text-white">Commercial & HOAs</h4>
+                <p class="text-xs text-gray-400">Offices, retail spaces, and condominiums demanding executive finishes.</p>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      expectativas: {
+        es: `
+          <div class="animate-fade-slide w-full space-y-6">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">¿QUÉ ESPERA EL CLIENTE DE NOSOTROS?</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mt-2">6 Promesas Que Cumplimos en Cada Proyecto</h3>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-clock text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Puntualidad Absoluta</h4>
+                  <p class="text-xs text-gray-400 mt-1">Respetamos tu tiempo y entregamos en la fecha acordada sin excusas.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-broom text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Limpieza y Cuidado Total</h4>
+                  <p class="text-xs text-gray-400 mt-1">Protegemos tus pisos, muebles y áreas verdes antes de abrir una sola lata de pintura.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-file-invoice-dollar text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Presupuestos Claros</h4>
+                  <p class="text-xs text-gray-400 mt-1">Cero costos ocultos. Transparencia total desde la primera evaluación.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-sun-plant-wilt text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Materiales Grado Florida</h4>
+                  <p class="text-xs text-gray-400 mt-1">Pinturas y materiales resistentes al sol intenso, humedad y salitre de Los Cayos.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-comments text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Comunicación Directa</h4>
+                  <p class="text-xs text-gray-400 mt-1">Avances diarios por foto o video para tu total tranquilidad.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-circle-check text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Satisfacción 100% Garantizada</h4>
+                  <p class="text-xs text-gray-400 mt-1">No damos por terminado un proyecto hasta que estés completamente encantado.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `,
+        en: `
+          <div class="animate-fade-slide w-full space-y-6">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">WHAT CLIENTS EXPECT FROM US</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white mt-2">6 Core Promises We Deliver on Every Job</h3>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-clock text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Strict Punctuality</h4>
+                  <p class="text-xs text-gray-400 mt-1">We respect your schedule and complete projects on time.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-broom text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Spotless Protection</h4>
+                  <p class="text-xs text-gray-400 mt-1">Full masking and protection of your floors, furniture, and landscaping.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-obsidian-950 border border-gold-500/25 flex gap-3">
+                <i class="fa-solid fa-file-invoice-dollar text-gold-400 text-lg mt-1"></i>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Transparent Estimates</h4>
+                  <p class="text-xs text-gray-400 mt-1">No hidden surprises—clear pricing from day one.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      contacto: {
+        es: `
+          <div class="animate-fade-slide grid md:grid-cols-12 gap-8 items-center w-full">
+            <div class="md:col-span-6 space-y-4">
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">CONTACTO DIRECTO</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">Hablemos de tu Próximo Proyecto</h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                Estamos listos para atenderte en <strong class="text-white">West Palm Beach, Boca Raton, Fort Lauderdale, Miami y Los Cayos</strong>. Contáctanos por llamada telefónica o WhatsApp para coordinar tu presupuesto gratuito.
+              </p>
+              <div class="space-y-3 pt-2">
+                <a href="tel:+12545694370" class="flex items-center gap-3 p-4 rounded-2xl bg-obsidian-950 border border-gold-500/40 hover:border-gold-400 transition">
+                  <div class="w-11 h-11 rounded-xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <span class="block text-xs text-gray-400">Teléfono Directo</span>
+                    <span class="font-bold text-white text-base">+1 (254) 569-4370</span>
+                  </div>
+                </a>
+
+                <a href="https://wa.me/12545694370?text=Hola%20The%20Great%20Remodeling%20Painting%20and%20more%20LLC,%20deseo%20cotizar%20un%20proyecto."
+                   target="_blank" rel="noopener noreferrer"
+                   class="btn-gold flex items-center justify-center gap-3 p-4 rounded-2xl font-extrabold text-base shadow-gold-strong">
+                  <i class="fa-brands fa-whatsapp text-2xl"></i>
+                  <span>Abrir WhatsApp Ahora</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="md:col-span-6 bg-obsidian-950 border border-gold-500/30 rounded-2xl p-6 space-y-4">
+              <h4 class="font-display font-bold text-gold-400 text-lg">Envío Rápido de Consulta</h4>
+              <input type="text" id="quickName" placeholder="Tu Nombre Completo" class="w-full bg-obsidian-900 border border-obsidian-700 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none" />
+              <input type="text" id="quickCity" placeholder="Ciudad (ej. West Palm Beach, Miami, Key Largo...)" class="w-full bg-obsidian-900 border border-obsidian-700 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none" />
+              <textarea id="quickMsg" rows="3" placeholder="Cuéntanos qué deseas remodelar o pintar..." class="w-full bg-obsidian-900 border border-obsidian-700 focus:border-gold-500 rounded-xl px-4 py-3 text-sm text-white outline-none"></textarea>
+              <button onclick="sendQuickContactWhatsapp()" class="btn-gold w-full py-3.5 rounded-xl font-bold text-sm cursor-pointer">
+                <i class="fa-brands fa-whatsapp mr-2"></i>Enviar Mensaje por WhatsApp
+              </button>
+            </div>
+          </div>
+        `,
+        en: `
+          <div class="animate-fade-slide grid md:grid-cols-12 gap-8 items-center w-full">
+            <div class="md:col-span-6 space-y-4">
+              <span class="px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 text-xs font-bold uppercase tracking-wider">DIRECT CONTACT</span>
+              <h3 class="font-display text-2xl sm:text-3xl font-bold text-white">Let's Discuss Your Next Project</h3>
+              <p class="text-gray-300 text-sm leading-relaxed">
+                Serving <strong class="text-white">West Palm Beach, Boca Raton, Fort Lauderdale, Miami, and the Florida Keys</strong>. Call or message us on WhatsApp for a free estimate.
+              </p>
+              <a href="https://wa.me/12545694370?text=Hello%20The%20Great%20Remodeling%20Painting%20and%20more%20LLC,%20I%20would%20like%20a%20free%20estimate."
+                 target="_blank" rel="noopener noreferrer"
+                 class="btn-gold flex items-center justify-center gap-3 p-4 rounded-2xl font-extrabold text-base">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Open WhatsApp (+1 254-569-4370)</span>
+              </a>
+            </div>
+            <div class="md:col-span-6 bg-obsidian-950 border border-gold-500/30 rounded-2xl p-6 space-y-4">
+              <h4 class="font-display font-bold text-gold-400 text-lg">Quick Message to WhatsApp</h4>
+              <input type="text" id="quickName" placeholder="Your Full Name" class="w-full bg-obsidian-900 border border-obsidian-700 rounded-xl px-4 py-3 text-sm text-white outline-none" />
+              <input type="text" id="quickCity" placeholder="City (e.g., West Palm Beach, Miami, Key West)" class="w-full bg-obsidian-900 border border-obsidian-700 rounded-xl px-4 py-3 text-sm text-white outline-none" />
+              <textarea id="quickMsg" rows="3" placeholder="Tell us about your remodeling or painting needs..." class="w-full bg-obsidian-900 border border-obsidian-700 rounded-xl px-4 py-3 text-sm text-white outline-none"></textarea>
+              <button onclick="sendQuickContactWhatsapp()" class="btn-gold w-full py-3.5 rounded-xl font-bold text-sm cursor-pointer">
+                <i class="fa-brands fa-whatsapp mr-2"></i>Send via WhatsApp
+              </button>
+            </div>
+          </div>
+        `
+      }
+    };
+
+    function selectPillar(key) {
+      document.querySelectorAll('.pillar-btn').forEach(btn => {
+        btn.classList.remove('border-2', 'border-gold-500', 'bg-obsidian-850', 'shadow-gold-glow');
+        btn.classList.add('border', 'border-obsidian-700', 'bg-obsidian-900');
+        const iconBox = btn.querySelector('div');
+        if (iconBox) {
+          iconBox.classList.remove('bg-gold-500', 'text-obsidian-950');
+          iconBox.classList.add('bg-obsidian-800', 'text-gold-400');
+        }
+      });
+
+      const activeBtn = document.getElementById(`btn-pillar-${key}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('border', 'border-obsidian-700', 'bg-obsidian-900');
+        activeBtn.classList.add('border-2', 'border-gold-500', 'bg-obsidian-850', 'shadow-gold-glow');
+        const iconBox = activeBtn.querySelector('div');
+        if (iconBox) {
+          iconBox.classList.remove('bg-obsidian-800', 'text-gold-400');
+          iconBox.classList.add('bg-gold-500', 'text-obsidian-950');
+        }
+      }
+
+      const displayBox = document.getElementById('pillarDisplayBox');
+      displayBox.innerHTML = pillarsData[key][currentLang] || pillarsData[key].es;
+    }
+
+    function sendQuickContactWhatsapp() {
+      const name = document.getElementById('quickName')?.value.trim() || 'Cliente';
+      const city = document.getElementById('quickCity')?.value.trim() || 'Sur de Florida';
+      const msg = document.getElementById('quickMsg')?.value.trim() || 'Solicito información de remodelación y pintura.';
+      const text = `Hola The Great Remodeling Painting and more LLC, soy ${name} desde ${city}. ${msg}`;
+      window.open(`https://wa.me/12545694370?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+    }
+
+    // 5. Instant Estimate Calculator Logic
+    function updateEstimate() {
+      const service = document.getElementById('calcService').value;
+      const sqft = parseInt(document.getElementById('calcSqft').value, 10);
+      document.getElementById('sqftDisplay').textContent = `${sqft.toLocaleString()} sq ft`;
+
+      let rateMin = 2.0;
+      let rateMax = 3.0;
+
+      if (service === 'paint_int') { rateMin = 2.0; rateMax = 3.2; }
+      else if (service === 'paint_ext') { rateMin = 2.4; rateMax = 3.8; }
+      else if (service === 'remodel_room') { rateMin = 6.5; rateMax = 11.0; }
+      else if (service === 'remodel_full') { rateMin = 14.0; rateMax = 24.0; }
+
+      const low = Math.round((sqft * rateMin) / 50) * 50;
+      const high = Math.round((sqft * rateMax) / 50) * 50;
+
+      document.getElementById('estimateRange').textContent = `$${low.toLocaleString()} – $${high.toLocaleString()}`;
+    }
+
+    function sendEstimateToWhatsapp() {
+      const serviceSelect = document.getElementById('calcService');
+      const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+      const zone = document.getElementById('calcZone').value;
+      const sqft = document.getElementById('calcSqft').value;
+      const est = document.getElementById('estimateRange').textContent;
+
+      const message = `Hola The Great Remodeling Painting and more LLC, calculé un estimado en su web:\n• Servicio: ${serviceText}\n• Zona: ${zone}\n• Área aprox: ${sqft} sq ft\n• Estimado web: ${est}\nMe gustaría agendar una evaluación.`;
+      window.open(`https://wa.me/12545694370?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    }
+
+    // 6. Interactive Before / After Slider
+    function initBeforeAfterSlider() {
+      const container = document.getElementById('baSlider');
+      const beforeLayer = document.getElementById('baBeforeLayer');
+      const divider = document.getElementById('baDivider');
+      if (!container || !beforeLayer || !divider) return;
+
+      let isDragging = false;
+
+      const updateSliderPosition = (clientX) => {
+        const rect = container.getBoundingClientRect();
+        let offsetX = clientX - rect.left;
+        offsetX = Math.max(0, Math.min(offsetX, rect.width));
+        const percent = (offsetX / rect.width) * 100;
+        beforeLayer.style.width = `${percent}%`;
+        divider.style.left = `${percent}%`;
+      };
+
+      divider.addEventListener('mousedown', () => { isDragging = true; });
+      window.addEventListener('mouseup', () => { isDragging = false; });
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        updateSliderPosition(e.clientX);
+      });
+
+      container.addEventListener('click', (e) => updateSliderPosition(e.clientX));
+
+      // Touch support for mobile
+      divider.addEventListener('touchstart', () => { isDragging = true; }, { passive: true });
+      window.addEventListener('touchend', () => { isDragging = false; });
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging || !e.touches.length) return;
+        updateSliderPosition(e.touches[0].clientX);
+      }, { passive: true });
+    }
+
+    // 7. Mobile Menu & Clipboard Copy
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function copyPhoneNumber() {
+      const tempInput = document.createElement('input');
+      tempInput.value = '+1 (254) 569-4370';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+
+      const label = document.getElementById('copyPhoneText');
+      label.textContent = '¡Teléfono copiado! +1 (254) 569-4370';
+      setTimeout(() => {
+        label.textContent = 'Copiar teléfono: +1 (254) 569-4370';
+      }, 2500);
+    }
+
+    // 8. Bilingual Switch (ES / EN) for South Florida Reach
+    const translations = {
+      es: {
+        topLocation: 'West Palm Beach, FL • Cobertura en todo el Sur de la Florida y Los Cayos',
+        navAbout: 'Quiénes Somos',
+        navPillars: 'Nuestra Esencia',
+        navGallery: 'Galería de Proyectos',
+        navCalc: 'Cotizador',
+        navHiring: 'Empleos',
+        navWhatsapp: 'WhatsApp Directo',
+        heroBadge: 'EXCELENCIA EN REMODELACIÓN Y PINTURA • WEST PALM BEACH, FL',
+        heroTitle1: 'Transformamos Propiedades en',
+        heroTitle2: 'Obras Maestras de Lujo',
+        heroSubtitle: 'En The Great Remodeling Painting and more LLC elevamos el valor, la estética y el confort de casas, habitaciones, apartamentos y locales comerciales. Radicados en West Palm Beach con cobertura total en el Sur de la Florida y Los Cayos.',
+        btnViewPhotos: 'Ver Miles de Fotos',
+        btnHiringHero: 'Estamos Contratando Personal',
+        stat1: 'Acabados Garantizados',
+        stat2: 'Espacios Renovados',
+        stat3: 'Sur de FL y Los Cayos',
+        cardHeadline: 'Atención Inmediata y Presupuestos Sin Compromiso',
+        cardSub: 'Pintura residencial y comercial, remodelación de cocinas, baños, pisos, drywall y renovación total de exteriores.',
+        cardQuoteBtn: 'Cotizar por WhatsApp',
+        aboutTag: 'QUIÉNES SOMOS',
+        aboutTitle: 'Artesanía de Alto Nivel, Compromiso y Elegancia en Cada Detalle',
+        galMegaBtn: 'Ver Miles de Fotos (Galería Completa)',
+        hiringTitle: '¡Estamos Contratando Personal!',
+        applyWhatsappBtn: 'Contactar por WhatsApp para Empleo'
+      },
+      en: {
+        topLocation: 'West Palm Beach, FL • Serving All of South Florida & The Florida Keys',
+        navAbout: 'About Us',
+        navPillars: 'Our Philosophy',
+        navGallery: 'Project Gallery',
+        navCalc: 'Estimator',
+        navHiring: 'Careers',
+        navWhatsapp: 'Direct WhatsApp',
+        heroBadge: 'LUXURY REMODELING & PAINTING • WEST PALM BEACH, FL',
+        heroTitle1: 'Transforming Properties Into',
+        heroTitle2: 'Luxury Masterpieces',
+        heroSubtitle: 'At The Great Remodeling Painting and more LLC, we elevate the beauty, comfort, and value of homes, rooms, and commercial spaces. Based in West Palm Beach with full coverage across South Florida and The Florida Keys.',
+        btnViewPhotos: 'View Thousands of Photos',
+        btnHiringHero: 'We Are Hiring Staff',
+        stat1: 'Guaranteed Finishes',
+        stat2: 'Spaces Renovated',
+        stat3: 'South FL & The Keys',
+        cardHeadline: 'Immediate Response & Free Estimates',
+        cardSub: 'Residential & commercial painting, kitchen & bath remodeling, flooring, drywall, and complete exterior renovations.',
+        cardQuoteBtn: 'Quote via WhatsApp',
+        aboutTag: 'ABOUT US',
+        aboutTitle: 'High-End Craftsmanship, Reliability & Elegance in Every Detail',
+        galMegaBtn: 'View Thousands of Photos (Full Gallery)',
+        hiringTitle: 'We Are Hiring Skilled Staff!',
+        applyWhatsappBtn: 'Apply Now via WhatsApp'
+      }
+    };
+
+    let activePillarKey = 'vision';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'es' ? 'en' : 'es';
+      document.getElementById('langLabel').textContent = currentLang === 'es' ? 'EN' : 'ES';
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          el.textContent = translations[currentLang][key];
+        }
+      });
+
+      selectPillar(activePillarKey);
+      filterInlineGallery('all');
+    }
+
+    // Wrap selectPillar to track active tab
+    const originalSelectPillar = selectPillar;
+    selectPillar = function(key) {
+      activePillarKey = key;
+      originalSelectPillar(key);
+    };
+
+    // Initialize everything on window load
+    window.onload = function() {
+      selectPillar('vision');
+      filterInlineGallery('all');
+      updateEstimate();
+      initBeforeAfterSlider();
+    };
+  </script>
+</body>
+</html>
